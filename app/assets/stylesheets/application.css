@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+/* require_tree . 의 의미는 application css 주변에 있는 파일들을 불러온다
+ * home.scss가 require_tree에 들어감
+ * require_self 는 파일 자기 자신, 아래쪽 코드가 self에 들어가는 것
+ */
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}

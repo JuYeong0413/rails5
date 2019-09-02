@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/* directive, 위에서부터 순차적으로 적용된다 */
