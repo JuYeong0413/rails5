@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="global-header">
+      <div class="container">
+        <div class="logo">My Profile</div>
+        <ul class="menu">
+          <a href="/">
+            <li class="item">Hello World</li>
+          </a>
+          <a href="/contact">
+            <li class="item">Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
