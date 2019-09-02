@@ -1,0 +1,18 @@
+<div>
+  2 곱하기 2는 <strong><%= 2 * 2 %></strong>
+  2 곱하기 3은 <strong><%= "hi" %></strong>
+</div>
+
+<% if 1+2 == 2 %> <!-- 연산은 하되 출력은 안 함 -->
+  <span>Correct!</span>
+<% else %>
+  <span>Wrong!</span>
+<% end %>
+
+<h1>김나박이</h1>
+<% ["김범수", "나얼", "박효신", "이수"].each do |name| %>
+  <span><%= name %></span>
+<% end %>
+
+<h1>현재시간</h1>
+<span><%= DateTime.now %></span>

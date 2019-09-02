@@ -3,4 +3,7 @@ class HomeController < ApplicationController
     # render text: '<h1>Hello World!</h1>'
     # render 'my_first_view'
   end
+
+  def index
+  end
 end
