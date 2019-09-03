@@ -1,3 +1,9 @@
+<!-- partial을 불러오는 코드 -->
+<h1>This is menu</h1>
+<%= render partial: "shared/menu", locals: {title: "Menu1"} %> <!-- partial에 변수값을 넣어줘서 출력 -->
+<%= render partial: "shared/menu", locals: {title: "Menu2"} %>
+<%= render partial: "shared/menu" %> <!-- 언더바와 확장자 제외 -->
+
 <div>
   2 곱하기 2는 <strong><%= 2 * 2 %></strong>
   2 곱하기 3은 <strong><%= "hi" %></strong>
