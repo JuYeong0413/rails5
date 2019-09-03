@@ -1,2 +1,13 @@
-<h1>Contacts#index</h1>
-<p>Find me in app/views/contacts/index.html.erb</p>
+<!-- <h1>Contacts#index</h1>
+<p>Find me in app/views/contacts/index.html.erb</p> -->
+
+<h1>All Contacts</h1>
+<ul>
+  <% @all_contacts.each do |contact| %>
+    <li><%= contact.name %> : <%= contact.content %></li>
+  <% end %>
+</ul>
+
+<!-- @all_contacts = [{name: 'juyeong', email: 'juyeong@gmail.com', content: 'hello world!'},
+                      {name: 'john', email: 'john'....},
+                      {name: '3333', email: ...}]-->
