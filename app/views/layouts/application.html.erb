@@ -18,9 +18,11 @@
             <li class="item">Hello World</li>
           </a>
           <!-- <a href="/contact"> -->
-          <a href="/contacts/new">
+          <!-- <a href="/contacts/new"> -->
+          <%= link_to new_contact_path do %>
             <li class="item">Contact</li>
-          </a>
+          <!-- </a> -->
+          <% end %>
         </ul>
       </div>
     </div>

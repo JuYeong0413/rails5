@@ -15,9 +15,11 @@ class ContactsController < ApplicationController
     if new_contact.save
       # save가 됐을 때 데이터베이스에 완전히 제대로 저장이 된다면 리턴값은 true,
       # save하는 과정에 문제가 생기게 되어서 실패하면 false를 리턴
-      redirect_to "/contacts/index"
+      # redirect_to "/contacts/index"
+      redirect_to contacts_path
     else
-      redirect_to "/contacts/new"
+      # redirect_to "/contacts/new"
+      redirect_to new_contact_path
     end
   end
 end
