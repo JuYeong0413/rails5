@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get 'users/new'
+  resources :users, only: [:new, :create]
+
   # get 'contacts/index'
   #
   # get 'contacts/new'
