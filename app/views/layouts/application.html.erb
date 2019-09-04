@@ -26,6 +26,9 @@
           <%= link_to new_user_path do %>
             <li class="item">Sign up</li>
           <% end %>
+          <% if session[:user_id] %>
+            <li class="item"><%= User.find_by(id: session[:user_id]).name %></li> <!-- view에서 모델을 호출하는 코드는 좋지 않다. -->
+          <% end %>
         </ul>
       </div>
     </div>
