@@ -1,4 +1,6 @@
 class ContactsController < ApplicationController
+  before_action :authenticate, only: [:index]
+  before_action :authenticate_admin, only: [:index]
   def index
     @all_contacts = Contact.all # 배열 형태로 담기게 된다.
   end
